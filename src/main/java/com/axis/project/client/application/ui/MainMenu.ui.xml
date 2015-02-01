@@ -1,0 +1,26 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui' >
+	  <ui:with type="com.axis.project.client.place.NameTokens" field="nameTokens"></ui:with>
+	  <ui:style>
+		span.name{
+			font-size : 16px;
+		}
+		span.links{
+			float : right;
+			word-spacing : 8px;
+			margin-right:25px;
+		}
+
+	  </ui:style>
+	 <g:HTMLPanel>
+		   <div>
+			   <span class="{style.name}">Jait Thomas</span>    
+			   
+			   <span class="{style.links}">
+				    <g:InlineHyperlink targetHistoryToken="{nameTokens.getHome}">Home</g:InlineHyperlink>
+				    <g:InlineHyperlink targetHistoryToken="{nameTokens.getHobby1}">Hobby1</g:InlineHyperlink>
+				    <g:InlineHyperlink targetHistoryToken="{nameTokens.getHobby2}">Hobby2</g:InlineHyperlink>
+				</span>
+		   </div>
+	  </g:HTMLPanel> 
+</ui:UiBinder>

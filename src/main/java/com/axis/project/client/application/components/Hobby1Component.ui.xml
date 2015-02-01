@@ -1,0 +1,21 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+    <ui:style>
+        .imageResize { width:200px; height:200px;} 
+    </ui:style>         
+    <ui:with type="com.axis.project.client.place.NameTokens" field="nameTokens"></ui:with>         
+    <ui:with field='res' type='com.axis.project.client.application.utils.ImageResource'/>
+  
+	    <g:HorizontalPanel horizontalAlignment="ALIGN_CENTER" spacing="0" width="100%" height="100%">
+	    		<g:cell horizontalAlignment="ALIGN_RIGHT">
+	    			<g:Image  resource="{res.hobby1}" styleName="{style.imageResize}" ></g:Image>
+	    		</g:cell>
+	    		<g:cell horizontalAlignment="ALIGN_LEFT">
+			    	<g:VerticalPanel horizontalAlignment="ALIGN_LEFT">
+			    		<g:InlineHyperlink targetHistoryToken="{nameTokens.getHobby1}">Hobby1</g:InlineHyperlink>
+			    		<g:Label>I like to play Ping Pong</g:Label>
+			    	</g:VerticalPanel>
+		    	</g:cell>
+ 		</g:HorizontalPanel>
+	
+</ui:UiBinder>

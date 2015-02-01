@@ -1,0 +1,8 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui' xmlns:c="urn:import:com.axis.project.client.application.components">
+    <g:HTMLPanel>
+    <div style="position:fixed;top:40%;left:40%">
+    	<c:Hobby1Component ui:field="hobby1Component" />
+    </div>
+    </g:HTMLPanel>
+</ui:UiBinder>
